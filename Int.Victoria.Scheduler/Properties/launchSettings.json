@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Int.Victoria.Scheduler": {
+      "commandName": "Project",
+      "commandLineArgs": "productcatalog"
+    }
+  }
+}

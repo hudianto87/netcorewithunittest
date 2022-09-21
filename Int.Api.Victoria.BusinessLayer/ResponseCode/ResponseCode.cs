@@ -1,0 +1,137 @@
+﻿using System.ComponentModel;
+using System.Reflection;
+
+namespace Int.Api.Victoria.BusinessLayer.ResponseCode
+{
+    public class ResponseCode
+    {
+        public enum errorList
+        {
+            [Description("Success")] WMS000 = 000,
+            [Description("Token can't null or empty")] WMS001 = 001,
+            [Description("Your session is over")] WMS002 = 002,
+            [Description("Email can't null or empty")] WMS003 = 003,
+            [Description("Password can't null or empty")] WMS004 = 004,
+            [Description("Data not found")] WMS005 = 005,
+            [Description("Customer not found")] WMS006 = 006,
+            [Description("Product not found")] WMS007 = 007,
+            [Description("Cut Off config not found")] WMS008 = 008,
+            [Description("Product bank account not found")] WMS009 = 009,
+            [Description("Generator ID not found")] WMS010 = 010,
+            [Description("Sub account not found")] WMS011 = 011,
+            [Description("Email And Username not found")] WMS012 = 012,
+            [Description("Customer bank account not found")] WMS013 = 013,
+            [Description("Product Currency Does Not Match With Customer Bank Account Currency")] WMS014 = 014,
+            [Description("Failed to saved")] WMS015 = 015,
+            [Description("Agent not found")] WMS016 = 016,
+            [Description("Customer risk profile not found")] WMS017 = 017,
+            [Description("Channel reference not found")] WMS018 = 018,
+            [Description("Customer Risk Profile not match with Product Risk Profile")] WMS019 = 019,
+            [Description("Customer risk profile is lower than product risk profile")] WMS020 = 020,
+            [Description("Customer portfolio not found")] WMS021 = 021,
+            [Description("Invalid login data")] WMS022 = 022,
+            [Description("Logout data can't null or empty")] WMS023 = 023,
+            [Description("Failed to saved transaction notification")] WMS024 = 024,
+            [Description("Minimum balance after redemption is too low. Please reduce the amount or choose Redeem All")] WMS025 = 025,
+            [Description("Balance after Redeem All is running out")] WMS026 = 026,
+            [Description("User Name Already Exist")] WMS028 = 028,
+            [Description("Email Address Already Exist")] WMS029 = 029,
+            [Description("Cif Already Exist")] WMS030 = 030,
+            [Description("Nomor Identitas Already Exists")] WMS031 = 031,
+            [Description("Bank Code Not Exist in WMS")] WMS032 = 032,
+            [Description("Bank Code2 Not Exist in WMS")] WMS033 = 033,
+            [Description("Bank Code3 Not Exist in WMS")] WMS034 = 034,
+            [Description("Some fields is not mapped")] WMS035 = 035,
+            [Description("Email not found")] WMS036 = 036,
+            [Description("Username not found")] WMS037 = 037,
+            [Description("Data Reference Risk Profile Question not found")] WMS038 = 038,
+            [Description("Transaction data not found")] WMS039 = 039,
+            [Description("Document type not found")] WMS040 = 040,
+            [Description("Data Transaction is not allowed")] WMS041 = 041,
+            [Description("Customer SID not available")] WMS042 = 042,
+            [Description("Customer IFUA not available")] WMS043 = 043,
+            [Description("Registration Submit email template not found")] WMS044 = 044,
+            [Description("Send mail account not found")] WMS045 = 045,
+            [Description("Data Reference Risk Profile Question Option not found")] WMS046 = 046,
+            [Description("Image size config not found")] WMS047 = 047,
+            [Description("Image size exceed maximum size")] WMS048 = 048,
+            [Description("Image extension config not found")] WMS049 = 049,
+            [Description("Image extension not allow")] WMS050 = 050,
+            [Description("Outstanding Balance Product Is Empty")] WMS051 = 051,
+            [Description("Outstanding Balance Sub Account Is Empty")] WMS052 = 052,
+            [Description("User data is blocked")] WMS053 = 053,
+            [Description("Channel Agent Not Found")] WMS054 = 054,
+            [Description("Agent Structure Is Empty")] WMS055 = 055,
+            [Description("Agent is Resign")] WMS056 = 056,
+            [Description("Your account is locked, please reset your password")] WMS057 = 057,
+            [Description("Key Int.Session.TimeOut not found")] WMS058 = 058,
+            [Description("Duplicate Field No Rekening")] WMS059 = 059,
+            [Description("CIF in list SID fail")] WMS060 = 060,
+            [Description("Account Number is mandatory")] WMS061 = 061,
+            [Description("Check Bukti Bayar config not found")] WMS062 = 062,
+            [Description("Product not allowed for subscription")] WMS063 = 063,
+            [Description("Product not allowed for redemption")] WMS064 = 064,
+            [Description("Payment proof transaction not found")] WMS065 = 065,
+            [Description("Email not match with OTP")] WMS066 = 066,
+            [Description("OTP has reached the limit")] WMS067 = 067,
+            [Description("OTP has expired")] WMS068 = 068,
+            [Description("Request InvAccountNo cannot be empty, if Transaction Category RED & SWT")] WMS069 = 069,
+            [Description("Request Units cannot be 0 if Transaction Category RED & SWT")] WMS070 = 070,
+            [Description("Request Net Amount cannot be 0 if Transaction Category SUB")] WMS071 = 071,
+            [Description("Config UI.Transaction.Fee.Tax.Value Not Found")] WMS072 = 072,
+            [Description("Request ProductCodeTo cannot be empty if Transaction Category SWT")] WMS073 = 073,
+            [Description("Can not Make Transactions with This Product From this Channel.")] WMS074 = 074,
+            [Description("Config ESB.FeeTypeCode Not Found")] WMS075 = 075,
+            [Description("Product must Allow Subscription in Transaction Category SUB")] WMS076 = 076,
+            [Description("Product must Allow Redemption in Transaction Category RED")] WMS077 = 077,
+            [Description("Product must Allow Switching in Transaction Category SWT")] WMS078 = 078,
+            [Description("Product From Fund House Does Not Match with Product To Fund House")] WMS079 = 079,
+            [Description("Investment Account Number Not Found")] WMS080 = 080,
+            [Description("NAV not found")] WMS081 = 081,
+            [Description("Product Bank Account cannot be Empty")] WMS082 = 082,
+            [Description("Currency Not Found")] WMS083 = 083,
+            [Description("Product not have quota")] WMS084 = 084,
+            [Description("Quota this product not enough")] WMS085 = 085,
+            [Description("Range Value NAV cannot be 0")] WMS086 = 086,
+            [Description("Range Type NAV must be D, M, Y")] WMS087 = 087,
+            [Description("ID Status Product must be Active")] WMS088 = 088,
+            [Description("IDMF Product must be CLOSE")] WMS089 = 089,
+            [Description("Offering Period product not found")] WMS090 = 090,
+            [Description("Status Customer must be OPEN or ACTIVE")] WMS091 = 091,
+            [Description("Quota Product is 0")] WMS092 = 092,
+            [Description("insufficient quota")] WMS093 = 093,
+            [Description("Product Bank Account Not Found")] WMS094 = 094,
+            [Description("Net Amount cannot be 0 or Smaller than 0")] WMS095 = 095,
+            [Description("Hold ID cannot be null or empty for transaction SUB")] WMS096 = 096,
+            [Description("Units cannot be 0 or Smaller than 0")] WMS097 = 097,
+            [Description("Data Sub Account not found")] WMS098 = 098,
+            [Description("Exit Window Product not Found")] WMS099 = 099,
+            [Description("Not Found")] WMS100 = 100,
+            [Description("Account No is Tax Amnesty")] WMS101 = 101,
+            [Description("No Installment Program for the product")] WMS102 = 102,
+            [Description("Fee not found")] WMS103 = 103,
+            [Description("must IDMFType OPEN")] WMS104 = 104,
+            [Description("product not found in master data product after get data balance product")] WMS105 = 105,
+            [Description("Request End Date cannot bigger then Begin Date")] WMS106 = 106,
+            [Description("Duplicate in Request NoRekening")] WMS107 = 107,
+            [Description("Duplicate in Request QuestionNo")] WMS108 = 108,
+            [Description("Product Catalog Not Found")] WMS109 = 109,
+            [Description("Product Category Not Found")] WMS110 = 110,
+            [Description("Api Key is wrong")] WMS111 = 111,
+            [Description("Unhanlde exception")] WMS999 = 999
+        }
+        public string GetEnumDesc(errorList value)
+        {
+            FieldInfo fi = value.GetType().GetField(value.ToString());
+
+            DescriptionAttribute[] attributes = fi.GetCustomAttributes(typeof(DescriptionAttribute), false) as DescriptionAttribute[];
+
+            if (attributes != null && attributes.Any())
+            {
+                return attributes.First().Description;
+            }
+
+            return value.ToString();
+        }
+    }
+}

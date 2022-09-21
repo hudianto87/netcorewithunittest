@@ -1,0 +1,152 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Int.Victoria.Scheduler.Models
+{
+    public partial class VRbsTproduct
+    {
+        public long TproductId { get; set; }
+        public long? IdfundHouse { get; set; }
+        public string ProductCode { get; set; } = null!;
+        public string? MfCodePk { get; set; }
+        public string ProductName { get; set; } = null!;
+        public string? Idcategory { get; set; }
+        public long? IdbankCustody { get; set; }
+        public string? Idcurrency { get; set; }
+        public double? Charges { get; set; }
+        public double? InitialUnit { get; set; }
+        public double? TotalUnit { get; set; }
+        public string? CouponType { get; set; }
+        public long? MaxCust { get; set; }
+        public DateTime? StartDate { get; set; }
+        public double? InitialNav { get; set; }
+        public double? MaxUnits { get; set; }
+        public double? PercentMax { get; set; }
+        public double? Quota { get; set; }
+        public DateTime? EndDate { get; set; }
+        public double? SubsAwal { get; set; }
+        public double? SubsAdd { get; set; }
+        public double? MaxHold { get; set; }
+        public double? MaxHoldAmount { get; set; }
+        public double? RedMin { get; set; }
+        public double? MinBalanceAfterRedemption { get; set; }
+        public double? MinSwitching { get; set; }
+        public double? MaxDaily { get; set; }
+        public int? SubSettle { get; set; }
+        public int? RedSettle { get; set; }
+        public bool? MinUnit { get; set; }
+        public double? MinUnitValue { get; set; }
+        public string? Idstatus { get; set; }
+        public string? ProdBankIdbank { get; set; }
+        public int? ProdBankIdbankBranch { get; set; }
+        public string? DividendType { get; set; }
+        public string? ExternalCode1 { get; set; }
+        public string? ExternalCode2 { get; set; }
+        public string? ProdBankAccountNo { get; set; }
+        public string? Isincode { get; set; }
+        public string? MgtFeeCalcMethod { get; set; }
+        public string? CustFeeCalcMethod { get; set; }
+        public string? SellFeeCalcMethod { get; set; }
+        public string? Glcode { get; set; }
+        public string? AccStatementName { get; set; }
+        public byte? NavPrecision { get; set; }
+        public bool? Pph23 { get; set; }
+        public bool? IsUnitized { get; set; }
+        public double? MaxTotDaily { get; set; }
+        public string? MaxTotDailyOf { get; set; }
+        public short? AumdateAdd { get; set; }
+        public int? UnitPrecision { get; set; }
+        public double? MinBalanceAfterSwitching { get; set; }
+        public string? RedemptionFlag { get; set; }
+        public bool? ReinvestedFlag { get; set; }
+        public bool? IsTaxAmnesty { get; set; }
+        public string? ProdBankAccountName { get; set; }
+        public string? ProdBankIdaccountBankType { get; set; }
+        public string? FeeCostCenter { get; set; }
+        public DateTime? SubscriptionCutOffTime { get; set; }
+        public DateTime? RedemptionCutOffTime { get; set; }
+        public DateTime? IpoCutOffTime { get; set; }
+        public DateTime? BatchOrderCutOffTime { get; set; }
+        public double? SubscriptionQuota { get; set; }
+        public DateTime? StartPeriod { get; set; }
+        public DateTime? EndPeriod { get; set; }
+        public int? RedemptionDay { get; set; }
+        public DateTime? CutOffTimeRedByAmount { get; set; }
+        public string? ProductAlias { get; set; }
+        public string? FeeCalculation { get; set; }
+        public string? CutOffTime { get; set; }
+        public string? ProdCategory { get; set; }
+        public string? RoundMethodAmount { get; set; }
+        public string? RoundMethodUnit { get; set; }
+        public double? MaxSubAwal { get; set; }
+        public double? MaxSubTopUp { get; set; }
+        public double? MaxRedUnitDailyPerCustomer { get; set; }
+        public double? MinUnitSwitching { get; set; }
+        public double? MaxUnitSwitching { get; set; }
+        public double? SubsMultipleOf { get; set; }
+        public bool? AllowSwitching { get; set; }
+        public bool? AllowRedemption { get; set; }
+        public bool? AllowTopUp { get; set; }
+        public bool? AllowSubscription { get; set; }
+        public int? SequenceSubscription { get; set; }
+        public int? SequenceRedemption { get; set; }
+        public int? SequenceDividend { get; set; }
+        public int? SequenceSwitching { get; set; }
+        public int? SequenceBatch { get; set; }
+        public byte? AmountPrecision { get; set; }
+        public int? ClosedAccountDay { get; set; }
+        public string? NavredMethod { get; set; }
+        public string? FundMgrCode { get; set; }
+        public string? InitAgentCd { get; set; }
+        public int? DividendPrecision { get; set; }
+        public bool? AllowBackDateTrans { get; set; }
+        public string? SubFeeCalcMethod { get; set; }
+        public string? RedFeeCalcMethod { get; set; }
+        public double? UnitTolerance { get; set; }
+        public double? AmountTolerance { get; set; }
+        public int? TintDaysId { get; set; }
+        public int? TcouponFreqId { get; set; }
+        public DateTime? OfferingBeginDate { get; set; }
+        public DateTime? OfferingEndDate { get; set; }
+        public DateTime? AllotmentDate { get; set; }
+        public int? DistributionMethodId { get; set; }
+        public DateTime? RefundDate { get; set; }
+        public string? Penerbit { get; set; }
+        public int? RiskProfile { get; set; }
+        public string SysActionType { get; set; } = null!;
+        public byte SysApprovalStatus { get; set; }
+        public bool SysRecStatus { get; set; }
+        public string? SysApprovalNotes { get; set; }
+        public string? SysApprovedBy { get; set; }
+        public DateTime? SysApprovedTime { get; set; }
+        public string? SysApprovedHost { get; set; }
+        public string? SysDeletedBy { get; set; }
+        public DateTime? SysDeletedTime { get; set; }
+        public string? SysDeletedHost { get; set; }
+        public string SysCreatedBy { get; set; } = null!;
+        public DateTime SysCreatedTime { get; set; }
+        public string SysCreatedHost { get; set; } = null!;
+        public string? SysModifiedBy { get; set; }
+        public DateTime? SysModifiedTime { get; set; }
+        public string? SysModifiedHost { get; set; }
+        public string? SysPendingBy { get; set; }
+        public DateTime? SysPendingTime { get; set; }
+        public string? SysPendingHost { get; set; }
+        public double? BankBuySpread { get; set; }
+        public double? BankSellSpread { get; set; }
+        public long? TissuerId { get; set; }
+        public long? TcreditRatingId { get; set; }
+        public string? ExternalCode3 { get; set; }
+        public string? ExternalCode4 { get; set; }
+        public string? ExternalCode5 { get; set; }
+        public long? Provider { get; set; }
+        public DateTime? FirstAccrue { get; set; }
+        public bool? IstaxAble { get; set; }
+        public bool? IsSyariah { get; set; }
+        public bool? IsRetail { get; set; }
+        public bool? IsSavingBond { get; set; }
+        public bool? IsOffshore { get; set; }
+        public DateTime? EndOfHoldingPeriod { get; set; }
+        public bool? ChargeCustodianFee { get; set; }
+    }
+}

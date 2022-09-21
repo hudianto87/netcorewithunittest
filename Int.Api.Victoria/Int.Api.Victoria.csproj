@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f8780847-aee7-4c45-a44d-dac0650be1b8</UserSecretsId>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Int.Api.Victoria.BusinessLayer\Int.Api.Victoria.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Int.Api.Victoria.DataAccess\Int.Api.Victoria.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

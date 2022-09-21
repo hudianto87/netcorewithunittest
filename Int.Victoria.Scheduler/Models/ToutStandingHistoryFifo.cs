@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Int.Victoria.Scheduler.Models
+{
+    public partial class ToutStandingHistoryFifo
+    {
+        public long IdoutstandingHistory { get; set; }
+        public long IdSubAccount { get; set; }
+        public int? IdSales { get; set; }
+        public DateTime OutstandingDate { get; set; }
+        public long IdsubTransaction { get; set; }
+        public double BalanceUnit { get; set; }
+        public double NavValue { get; set; }
+        public long? IdredTransaction { get; set; }
+        public double? AvgNav { get; set; }
+        public bool IsActive { get; set; }
+        public string CreatedBy { get; set; } = null!;
+        public DateTime CreatedDate { get; set; }
+        public string? ModifiedBy { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+
+        public virtual Tagent? IdSalesNavigation { get; set; }
+        public virtual TsubAccount IdSubAccountNavigation { get; set; } = null!;
+        public virtual Ttransaction? IdredTransactionNavigation { get; set; }
+        public virtual Ttransaction IdsubTransactionNavigation { get; set; } = null!;
+    }
+}
