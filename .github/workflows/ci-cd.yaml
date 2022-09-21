@@ -3,7 +3,7 @@ name: Continous integration and deployment
 on:
   push :
     branches:
-      - "main"      
+      - "master"      
 jobs:
   build:
     runs-on: windows-latest
@@ -20,6 +20,6 @@ jobs:
       
       - name: Build App
         run: dotnet build -c Release --no-restore
-        
+
 
   
